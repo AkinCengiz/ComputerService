@@ -10,9 +10,11 @@ public class ServiceRecord : BaseModel
 {
     public int CustomerId { get; set; }
     public string DeviceType { get; set; }
-    public string Brand { get; set; }
-    public string Model { get; set; }
-    public string SerialNumber { get; set; }
+    public int BrandId { get; set; }
+    [ForeignKey("BrandId")]
+    public Brand Brand { get; set; }
+    //public string Model { get; set; }
+    //public string SerialNumber { get; set; }
     public string Description { get; set; }
     public DateTime EstimatedCompletionDate { get; set; }
     public int StatusId { get; set; }

@@ -22,4 +22,5 @@ public class ComputerServiceContext : DbContext
     public DbSet<ServiceStatu> ServiceStatus { get; set; }
     public DbSet<Invoice> Invoices { get; set; }
     public DbSet<ServiceRecord> ServiceRecords { get; set; }
+    public DbSet<Brand> Brands { get; set; }
 }
